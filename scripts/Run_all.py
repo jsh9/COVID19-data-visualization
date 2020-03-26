@@ -35,7 +35,8 @@ txt += '_(Will be updated daily, following the update of the data source.)_'
 
 fig_filenames = sorted(glob.glob(f'../output_figures/*_{today}.png'))
 for fig_fn in fig_filenames:
-    txt += f'![]({fig_fn[1:]})\n'  # get rid of the first "dot" in the file path
+    fig_fn_for_MD = fig_fn[1:].replace('\\', '/')
+    txt += f'![]({fig_fn_for_MD})\n'
 # END FOR
 
 txt += '\n'
