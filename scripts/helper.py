@@ -37,11 +37,12 @@ def plot_lines(data: pd.DataFrame, title: str, ylabel: str, logy: bool = False):
     # END IF
     ax.annotate(
         s=title,
-        xy=(0.02, 0.9),
-        xytext=(0.02, 0.9),
+        xy=(0.02, 0.97),
+        xytext=(0.02, 0.97),
         xycoords='axes fraction',
         fontsize=16,
         fontweight='bold',
+        va='top',
     )
     return fig, ax
 
