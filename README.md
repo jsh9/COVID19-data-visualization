@@ -5,18 +5,18 @@ _Data visualization of some COVID-19 data_
 The data comes from The COVID Tracking Project (https://github.com/COVID19Tracking/covid-tracking-data).
 
 ## Visualizations from the data
-_(Will be updated daily, following the update of the data source.)_![](./output_figures/Map_01__positive_cases_by_state_2020-03-27.png)
-![](./output_figures/Map_02__Positive_rate_by_state_2020-03-27.png)
-![](./output_figures/Map_03__new_cases_from_2020-03-24_to_2020-03-27.png)
-![](./output_figures/Trend_01__positive_cases_all_US_states__linear_scale__2020-03-27.png)
-![](./output_figures/Trend_02__positive_cases_all_US_states__log_scale__2020-03-27.png)
-![](./output_figures/Trend_03__positive_cases_all_states_excl_NY_NJ__linear_scale__2020-03-27.png)
-![](./output_figures/Trend_04__positive_cases_all_states_excl_NY_NJ__log_scale__2020-03-27.png)
-![](./output_figures/Trend_05__number_of_tests_all_US_states__linear__2020-03-27.png)
-![](./output_figures/Trend_06__number_of_tests_all_US_states__log__2020-03-27.png)
-![](./output_figures/Trend_07__positive_rate_all_states_2020-03-27.png)
-![](./output_figures/Trend_08__positive_rate_all_states_excl_NY_NJ_2020-03-27.png)
-![](./output_figures/Trend_09__tests_per_capita_2020-03-27.png)
+_(Will be updated daily, following the update of the data source.)_![](./output_figures/Map_01__positive_cases_by_state_2020-03-29.png)
+![](./output_figures/Map_02__Positive_rate_by_state_2020-03-29.png)
+![](./output_figures/Map_03__new_cases_from_2020-03-26_to_2020-03-29.png)
+![](./output_figures/Trend_01__positive_cases_all_US_states__linear_scale__2020-03-29.png)
+![](./output_figures/Trend_02__positive_cases_all_US_states__log_scale__2020-03-29.png)
+![](./output_figures/Trend_03__positive_cases_all_states_excl_NY_NJ__linear_scale__2020-03-29.png)
+![](./output_figures/Trend_04__positive_cases_all_states_excl_NY_NJ__log_scale__2020-03-29.png)
+![](./output_figures/Trend_05__number_of_tests_all_US_states__linear__2020-03-29.png)
+![](./output_figures/Trend_06__number_of_tests_all_US_states__log__2020-03-29.png)
+![](./output_figures/Trend_07__positive_rate_all_states_2020-03-29.png)
+![](./output_figures/Trend_08__positive_rate_all_states_excl_NY_NJ_2020-03-29.png)
+![](./output_figures/Trend_09__tests_per_capita_2020-03-29.png)
 
 ## How to reproduce these figures
 To reproduce the figures, run `./scripts/Run_all.py`, which runs all other scripts in the same folder. The output figures are saved in the `output_figures` folder.
