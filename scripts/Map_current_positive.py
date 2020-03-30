@@ -33,7 +33,7 @@ fig, _ = pu.choropleth_map_state(
     pos_rate,
     map_title=f'Positive rate by state ({today})',
     unit='[%]',
-    vmax=100.0,
+    vmax=40.0,
     vmin=0.0,
     dpi=120,
     fontsize=16,

@@ -18,7 +18,7 @@ fig, ax = pu.choropleth_map_state(
     three_day_increase,
     map_title=f'New cases, from {three_days_ago} to {today}',
     unit='',
-    vmax=20000,
+    vmax=30000,
     vmin=0,
     dpi=120,
     fontsize=16,
