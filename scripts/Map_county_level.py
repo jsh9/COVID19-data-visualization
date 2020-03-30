@@ -35,5 +35,6 @@ fig, _ = pu.choropleth_map_county(
     vmax=20,
     cmap='GnBu',
     dpi=120,
+    unit='[%]'
 )
 fig.savefig(f'../output_figures/Map_county_03__Mortality_rate_by_county_{today}.png')

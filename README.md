@@ -8,6 +8,9 @@ The data comes from The COVID Tracking Project (https://github.com/COVID19Tracki
 _(Will be updated daily, following the update of the data source.)_![](./output_figures/Map_01__positive_cases_by_state_2020-03-29.png)
 ![](./output_figures/Map_02__Positive_rate_by_state_2020-03-29.png)
 ![](./output_figures/Map_03__new_cases_from_2020-03-26_to_2020-03-29.png)
+![](./output_figures/Map_county_01__Total_confirmed_cases_by_county_2020-03-29.png)
+![](./output_figures/Map_county_02__Total_deaths_by_county_2020-03-29.png)
+![](./output_figures/Map_county_03__Mortality_rate_by_county_2020-03-29.png)
 ![](./output_figures/Trend_01__positive_cases_all_US_states__linear_scale__2020-03-29.png)
 ![](./output_figures/Trend_02__positive_cases_all_US_states__log_scale__2020-03-29.png)
 ![](./output_figures/Trend_03__positive_cases_all_states_excl_NY_NJ__linear_scale__2020-03-29.png)
@@ -18,9 +21,9 @@ _(Will be updated daily, following the update of the data source.)_![](./output_
 ![](./output_figures/Trend_08__positive_rate_all_states_excl_NY_NJ_2020-03-29.png)
 ![](./output_figures/Trend_09__tests_per_capita_2020-03-29.png)
 ![](./output_figures/Trend_10__positive_normalized_by_pop_density__linear__2020-03-29.png)
-![](./output_figures/Map_county_01__Total_confirmed_cases_by_county_2020-03-28.png)
-![](./output_figures/Map_county_02__Total_deaths_by_county_2020-03-28.png)
-![](./output_figures/Map_county_03__Mortality_rate_by_county_2020-03-28.png)
+![](./output_figures/Map_county_01__Total_confirmed_cases_by_county_2020-03-29.png)
+![](./output_figures/Map_county_02__Total_deaths_by_county_2020-03-29.png)
+![](./output_figures/Map_county_03__Mortality_rate_by_county_2020-03-29.png)
 
 ## How to reproduce these figures
 To reproduce the figures, run `./scripts/Run_all.py`, which runs all other scripts in the same folder. The output figures are saved in the `output_figures` folder.

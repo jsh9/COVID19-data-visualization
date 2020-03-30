@@ -10,7 +10,6 @@ data_url = 'https://raw.githubusercontent.com/COVID19Tracking/covid-tracking-dat
 df = pd.read_csv(data_url)
 trend_df = df.pivot(index='date', columns='state', values='total')
 today = hlp.get_today(trend_df)
-yesterday = today - datetime.timedelta(days=1)
 
 #%%--------------- Plot -------------------------------------------------------
 daily_scripts = glob.glob(f'./Daily_*.py')
@@ -37,7 +36,7 @@ txt += '## Visualizations from the data\n'
 txt += '_(Will be updated daily, following the update of the data source.)_'
 
 fig_filenames = sorted(glob.glob(f'../output_figures/*_{today}.png'))
-fig_filenames.extend(sorted(glob.glob(f'../output_figures/Map_county_*_{yesterday}.png')))
+fig_filenames.extend(sorted(glob.glob(f'../output_figures/Map_county_*_{today}.png')))
 for fig_fn in fig_filenames:
     # (1) remove the first "dot" in the file path;
     # (2) replace '\' with '/' so that GitHub can correctly render images;
