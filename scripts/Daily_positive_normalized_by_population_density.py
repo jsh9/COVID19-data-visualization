@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 30 00:56:25 2020
-
-@author: Jian
-"""
 import numpy as np
 import pandas as pd
 import helper as hlp
