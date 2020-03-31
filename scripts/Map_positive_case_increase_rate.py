@@ -8,7 +8,7 @@ data_url = 'https://raw.githubusercontent.com/COVID19Tracking/covid-tracking-dat
 
 df = pd.read_csv(data_url)
 hlp.exclude_overseas_territory_records(df)
-trend_df = df.pivot(index='date', columns='state', values='total')
+trend_df = df.pivot(index='date', columns='state', values='positive')
 
 today = hlp.get_today(trend_df)
 three_days_ago = today - datetime.timedelta(days=3)
@@ -18,7 +18,7 @@ fig, ax = pu.choropleth_map_state(
     three_day_increase,
     map_title=f'New cases, from {three_days_ago} to {today}',
     unit='',
-    vmax=30000,
+    vmax=4000,
     vmin=0,
     dpi=120,
     fontsize=16,
