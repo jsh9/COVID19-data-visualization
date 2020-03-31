@@ -22,6 +22,7 @@ _(Will be updated daily, following the update of the data source.)_
 ![](./output_figures/Trend_08__positive_rate_all_states_excl_NY_NJ_2020-03-30.png)
 ![](./output_figures/Trend_09__tests_per_capita_2020-03-30.png)
 ![](./output_figures/Trend_10__positive_normalized_by_pop_density__linear__2020-03-30.png)
+![](./output_figures/Trend_11__new_cases_vs_total_cases__2020-03-30.png)
 
 ## How to reproduce these figures
 To reproduce the figures, run `./scripts/Run_all.py`, which runs all other scripts in the same folder. The output figures are saved in the `output_figures` folder.
