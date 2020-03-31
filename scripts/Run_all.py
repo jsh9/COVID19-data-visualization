@@ -33,10 +33,9 @@ txt += 'The data comes from The COVID Tracking Project '
 txt += '(https://github.com/COVID19Tracking/covid-tracking-data and the '
 txt += 'New York Times (https://github.com/nytimes/covid-19-data).\n\n'
 txt += '## Visualizations from the data\n'
-txt += '_(Will be updated daily, following the update of the data source.)_'
+txt += '_(Will be updated daily, following the update of the data source.)_\n'
 
 fig_filenames = sorted(glob.glob(f'../output_figures/*_{today}.png'))
-fig_filenames.extend(sorted(glob.glob(f'../output_figures/Map_county_*_{today}.png')))
 for fig_fn in fig_filenames:
     # (1) remove the first "dot" in the file path;
     # (2) replace '\' with '/' so that GitHub can correctly render images;
