@@ -16,8 +16,8 @@ n = 3  # time window (unit: days) to calculate new cases
 linespecs = pu.get_linespecs(range_linewidth=[1,3,5])
 
 plt.figure(figsize=(10, 4), dpi=120)
-for j in range(len(trend_df.columns)):
-    state = trend_df.columns[j]
+for j in range(len(trend_df.columns), 0, -1):
+    state = trend_df.columns[j - 1]
     state_data = np.array(trend_df[state])
     total_cases = state_data[n:]
     new_cases_over_last_n_days = state_data[n:] - state_data[:-n]
@@ -26,7 +26,7 @@ for j in range(len(trend_df.columns)):
         new_cases_over_last_n_days,
         label=state,
         alpha=0.7,
-        **linespecs[j]
+        **linespecs[j - 1]
     )
 # END FOR
 
