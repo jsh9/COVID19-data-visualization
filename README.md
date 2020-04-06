@@ -25,6 +25,8 @@ _(Will be updated daily, following the update of the data source.)_
 ![](./output_figures/Trend_11__new_cases_vs_total_cases__2020-04-05.png)
 ![](./output_figures/Trend_12__daily_new_cases_all_states_2020-04-05.png)
 ![](./output_figures/Trend_13__daily_new_cases_all_states_excl_NY_NJ_2020-04-05.png)
+![](./output_figures/Trend_14__daily_new_deaths_all_states_2020-04-05.png)
+![](./output_figures/Trend_15__daily_new_deaths_all_states_excl_NY_NJ_2020-04-05.png)
 
 ## How to reproduce these figures
 To reproduce the figures, run `./scripts/Run_all.py`, which runs all other scripts in the same folder. The output figures are saved in the `output_figures` folder.
