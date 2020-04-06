@@ -24,11 +24,18 @@ def replace_NY_NJ_data_with_NaN_for_easier_plotting(trend_df: pd.DataFrame):
     new_df['NJ'] = [np.nan] * trend_df.shape[0]
     return new_df
 
-def plot_lines(data: pd.DataFrame, title: str, ylabel: str, logy: bool = False):
+def plot_lines(
+        data: pd.DataFrame,
+        title: str,
+        ylabel: str,
+        logy: bool = False,
+        alpha: float = 1.0,
+):
     fig, ax = pu.plot_multiple_timeseries(
         data,
         ncol_legend=10,
         dpi=120,
+        alpha=alpha,
     )
     ax.set_xlabel('Date')
     ax.set_ylabel(ylabel)
