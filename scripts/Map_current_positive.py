@@ -20,7 +20,7 @@ fig, _ = pu.choropleth_map_state(
     positive,
     map_title=f'Positive cases by state ({today})',
     unit='',
-    vmax=10000,
+    vmax=20000,
     vmin=0,
     dpi=120,
     fontsize=16,
