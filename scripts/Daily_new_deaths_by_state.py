@@ -25,7 +25,7 @@ daily_increase_df = pd.DataFrame(
 daily_increase_df = daily_increase_df.iloc[-14:, :]  # only show last two weeks
 
 #%%---------------- Plot figures ----------------------------------------------
-ylabel = 'Daily new cases'
+ylabel = 'Daily new deaths'
 
 fig, ax = hlp.plot_lines(
     daily_increase_df,
