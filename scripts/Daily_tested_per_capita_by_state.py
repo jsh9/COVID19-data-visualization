@@ -22,6 +22,7 @@ df['population'] = df['state'].apply(lookup_population)
 df['tests_per_capita'] = df['total'] / df['population'] * 1e6
 
 trend_df = df.pivot(index='date', columns='state', values='tests_per_capita')
+trend_df = trend_df.iloc[40:, :]  # do not plot February data as it is sparse
 today = hlp.get_today(trend_df)
 
 #%%---------------- Plot figures ----------------------------------------------

@@ -12,7 +12,7 @@ fig, _ = pu.choropleth_map_county(
     data_by_county['cases'],
     map_title=f'Total confirmed cases per county, as of {today}',
     vmin=0,
-    vmax=4000,
+    vmax=10000,
     cmap='GnBu',
     dpi=120,
 )
@@ -22,7 +22,7 @@ fig, _ = pu.choropleth_map_county(
     data_by_county['deaths'],
     map_title=f'Total deaths per county, as of {today}',
     vmin=0,
-    vmax=200,
+    vmax=1000,
     cmap='GnBu',
     dpi=120,
 )

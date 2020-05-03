@@ -9,6 +9,7 @@ data_url = 'https://raw.githubusercontent.com/COVID19Tracking/covid-tracking-dat
 df = pd.read_csv(data_url)
 hlp.exclude_overseas_territory_records(df)
 trend_df = df.pivot(index='date', columns='state', values='positive')
+trend_df = trend_df.iloc[40:, :]  # do not plot February data as it is sparse
 today = hlp.get_today(trend_df)
 
 #%%---------------- Read population density data ------------------------------

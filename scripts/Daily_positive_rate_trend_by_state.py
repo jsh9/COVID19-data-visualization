@@ -9,6 +9,7 @@ hlp.exclude_overseas_territory_records(df)
 
 df['positive_rate'] = df['positive'] / df['total'] * 100
 trend_df = df.pivot(index='date', columns='state', values='positive_rate')
+trend_df = trend_df.iloc[40:, :]  # do not plot February data as it is sparse
 today = hlp.get_today(trend_df)
 
 #%%---------------- Plot figures ----------------------------------------------
